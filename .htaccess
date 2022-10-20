@@ -1,0 +1,3 @@
+RewriteEngine On # Turn on the rewriting engine
+RewriteRule ^api/send-email/?$ src/routes/api.php [NC,L]
+RewriteRule ^api/send-email/([0-9]+)/?$ src/routes/api.php?id=$1 [NC,L]

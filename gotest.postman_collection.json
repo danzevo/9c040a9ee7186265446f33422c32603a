@@ -1,0 +1,201 @@
+{
+	"info": {
+		"_postman_id": "373a165a-3808-4afb-83ac-c5e4d2bf9c52",
+		"name": "gotest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19284991"
+	},
+	"item": [
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:81/gotest/api/send-email",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"gotest",
+						"api",
+						"send-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:81/gotest/api/send-email/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"gotest",
+						"api",
+						"send-email",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "message",
+							"value": "test message",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test@example.com",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:81/gotest/api/send-email",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"gotest",
+						"api",
+						"send-email"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "message",
+							"value": "test message update",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test2@example.com",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:81/gotest/api/send-email/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"gotest",
+						"api",
+						"send-email",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:81/gotest/api/send-email/:id",
+					"host": [
+						"localhost"
+					],
+					"port": "81",
+					"path": [
+						"gotest",
+						"api",
+						"send-email",
+						":id"
+					],
+					"variable": [
+						{
+							"key": "id",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
